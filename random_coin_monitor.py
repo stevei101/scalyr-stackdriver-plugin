@@ -7,8 +7,8 @@ class RandomCoinMonitor(ScalyrMonitor):
         self.__counter = 0
         # Read two optional config fields.  You may also create a required
         # configuration  field by supplying the argument
-        # require_field=True.  Then, if the user does not supply the
-        # field in the monitors configuration, an exception will be raised.
+        # 'require_field=True'.  Then, if the user does not supply the
+        # field in the monitor's configuration, an exception will be raised.
         self.__gauss_mean = self._config.get('gauss_mean',
                                              default=0.5,
                                              convert_to=float,
